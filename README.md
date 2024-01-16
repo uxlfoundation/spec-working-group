@@ -1,1 +1,0 @@
-# spec-working-group
