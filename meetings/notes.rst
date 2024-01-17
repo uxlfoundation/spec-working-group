@@ -8,17 +8,17 @@
 Attendees:
 ----------
 
-Will Damon
-Robert Cohn
-Penporn Koanantakool
-Alexey Kukanov
-Maria Garzaran
-Greg Lueck
-Maria Kraynyuk
-Rod Burns
-Mehdi Goli
-Timmie Smith
-Ravindra Babu Ganapathi
+* Will Damon
+* Robert Cohn
+* Penporn Koanantakool
+* Alexey Kukanov
+* Maria Garzaran
+* Greg Lueck
+* Maria Kraynyuk
+* Rod Burns
+* Mehdi Goli
+* Timmie Smith
+* Ravindra Babu Ganapathi
 
 
 Agenda:
