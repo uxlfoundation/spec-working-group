@@ -20,7 +20,6 @@ Attendees:
 * Timmie Smith
 * Ravindra Babu Ganapathi
 
-
 Agenda:
 -------
 
