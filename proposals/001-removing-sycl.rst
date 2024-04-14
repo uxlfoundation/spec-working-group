@@ -69,23 +69,26 @@ Recommendation
 Use of SYCL vendor extensions in implementations
 ================================================
 
-Implementations need to use vendor extensions for best performance and
-functionality. It would be useful if a project had a reference implementation
-designed for maximum portability. This would be a good topic for the open source
-WG and individual projects.
+We do not have reference implementations for oneAPI spec components, so this is
+relevant for the open source projects. Vendor extensions limit portability, but
+they are needed for best performance and functionality. The effort and value of
+eliminating vendor extensions depends on the project. This would be a good topic
+for the open source WG and individual projects.
 
 Recommendation
-    Discuss reference implementations in the open source WG.
+    Discuss in the open source WG.
 
 Documentation of use of ``std::`` from SYCL kernels
 ===================================================
 
-SYCL specification does not support the use of ``std::`` in kernels and does not
-provide replacements. oneDPL wants to support standard C++ where ``std::`` would
-be used in code called from a kernel. DPL documents a list of ``std::``
-functions that are supported. It would be better if the SYCL specification or
-SYCL implementation documentation defined what can be used. This documentation
-would be useful for other projects. It has been discussed in the SYCL WG.
+The SYCL specification does not support the use of ``std::`` in kernels and does
+not provide replacements. oneDPL wants to support standard C++ where ``std::``
+would be used in code called from a kernel. DPL documents a list of ``std::``
+functions that will work with DPC++. Being able to use some ``std::``
+functionality in SYCL kernels would make it easier for all SYCL programmers.
+This is something that could be potentially moved from oneDPL to a common part
+of the oneAPI specification if more than one group felt they needed it.
 
 Recommendation
-    Raise it as a topic in the SYCL WG and DPC++ project.
+    The chapter we are removing does not have the information. This issue can be
+    raised as a separate proposal.
