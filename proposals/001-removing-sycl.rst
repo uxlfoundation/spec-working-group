@@ -54,10 +54,17 @@ library namespace::
 I believe this was done to make ``oneapi::mkl::bfloat16`` available.
 
 Recommendation
-    Oneapi spec components should not use vendor extensions in interfaces. Either
-    wrap the type (example above) or work with SYCL WG to make it part of SYCL
-    spec or as a KHR extension. If there is a compelling reason to use a vendor
-    extension, then review it with the spec WG as a candiate for a KHR extension.
+    Oneapi spec components should not use vendor extensions in interfaces. Some
+    alternatives are:
+    
+    * Wrap the type (example above)
+    * Work with SYCL WG to make it part of the specification or a KHR extension.
+      KHR extensions are Khronos extensions which have been approved in the SYCL
+      WG and are more likely to be provided in more than one SYCL implementation.
+
+    If using a vendor extension is the only way to achieve the desired behavior,
+    then it should be documented in the specification.
+
 
 Use of SYCL vendor extensions in implementations
 ================================================
