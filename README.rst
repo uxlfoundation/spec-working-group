@@ -3,5 +3,7 @@
 ==================================
 
 * `Meeting Notes`_
+* `RFCs`_
 
-.. _`Meeting Notes`: meetings/notes.rst
+.. _`Meeting Notes`: meetings/README.rst
+.. _`RFCs`: RFCs/README.rst
