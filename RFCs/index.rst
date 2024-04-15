@@ -1,6 +1,6 @@
-=========
-Proposals
-=========
+====
+RFCs
+====
 
 `001 Removing SYCL Chapter`_
 
