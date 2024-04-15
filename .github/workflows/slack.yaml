@@ -1,0 +1,25 @@
+name: Slack PR Notification
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check PR title
+      id: check
+      run: |
+        if [[ "${{ github.event.pull_request.title }}" == *"RFC"* ]]; then
+          echo "::set-output name=notify::true"
+        else
+          echo "::set-output name=notify::false"
+        fi
+    - name: Notify Slack
+      if: steps.check.outputs.notify == 'true'
+      uses: slackapi/slack-github-action@v1.25.0
+      with:
+        slack-message: "${{ github.actor }} opened a new RFC: ${{ github.event.pull_request.title }}"
+        slack-channell: '#wg-spec'
+      env:
+        SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
