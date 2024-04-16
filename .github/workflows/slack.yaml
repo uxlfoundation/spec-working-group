@@ -5,7 +5,8 @@ on:
     types: [opened, reopened]
 
 jobs:
-  notify:
+  rfc-notify:
+    name: RFC notifications
     runs-on: ubuntu-latest
     steps:
     - name: Check PR title
@@ -18,7 +19,7 @@ jobs:
       if: env.NOTIFY_SLACK == 'true'
       uses: slackapi/slack-github-action@v1.25.0
       with:
-        channel-id: "rc-test"
+        channel-id: "wg-spec"
         slack-message: "${{ github.actor }} opened a new RFC: ${{ github.event.pull_request.title }}"
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
