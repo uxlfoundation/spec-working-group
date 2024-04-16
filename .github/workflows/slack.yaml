@@ -20,5 +20,5 @@ jobs:
         channel-id: "rc-test"
         slack-message: "${{ github.actor }} opened a new RFC: ${{ github.event.pull_request.title }}"
       env:
-        #SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
-        SLACK_BOT_TOKEN: foobar
+        SLACK_BOT_TOKEN: ${{ secrets.XXX }}
+        #SLACK_BOT_TOKEN: foobar
