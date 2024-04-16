@@ -20,6 +20,6 @@ jobs:
       uses: slackapi/slack-github-action@v1.25.0
       with:
         slack-message: "${{ github.actor }} opened a new RFC: ${{ github.event.pull_request.title }}"
-        slack-channell: '#wg-spec'
+        slack-channel: '#wg-spec'
       env:
         SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
