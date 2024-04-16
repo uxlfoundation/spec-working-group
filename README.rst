@@ -7,4 +7,3 @@
 
 .. _`Meeting Notes`: meetings/README.rst
 .. _`RFCs`: RFC/README.rst
-
