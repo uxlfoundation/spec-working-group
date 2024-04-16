@@ -5,7 +5,8 @@ on:
     types: [opened, reopened]
 
 jobs:
-  notify:
+  rfc-notify:
+    name: RFC Notification
     runs-on: ubuntu-latest
     steps:
     - name: Check PR title
